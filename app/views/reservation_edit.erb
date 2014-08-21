@@ -1,0 +1,11 @@
+<div class = "container">
+
+  <form action= "/reservations/<%=@reservation.id%>" method="POST">
+    <input type = "hidden" name="_method" method="PUT">
+    <input type = "text" name="reservation[date]" value = "@reservation.date">
+    <input type = "text" name="reservation[time]" value = "@reservation.time">
+    <input type = "text" name="reservation[party_size]" value = "@reservation.party_size">
+    <input type = "submit" value = "edit reservation">
+  </form>
+
+</div>

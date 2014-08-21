@@ -1,0 +1,11 @@
+<div class = "container">
+
+  <form action= "/reservations/<%=@reservation.id%>" method="POST">
+
+    <input type = "text" name="reservation[date]" placeholder = "date">
+    <input type = "text" name="reservation[time]" placeholder = "time">
+    <input type = "text" name="reservation[party_size]" placeholder = "party size">
+    <input type = "submit" value = "make reservation">
+  </form>
+
+</div>

@@ -1,0 +1,15 @@
+<div class = "container">
+  <h1><%=@user.first_name%> <%=@user.last_name%></h1>
+
+  <%for @user.reservations.each |reservation| do%>
+
+        <li><%=reservation.date%></li>
+        <li><%=reservation.time%></li>
+        <li><%=reservation.party_size%></li>
+        <a href="/reservation/<%=reservation.id%>/delete"> delete</a>
+        <a href="/reservations/<%=reservation.id%>/edit"></a>
+
+  <%end%>
+
+  <a href="/reservations/new"> New Reservation</a>
+</div>
